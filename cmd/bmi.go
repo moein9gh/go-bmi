@@ -9,6 +9,13 @@ func main() {
 	fmt.Println("--------------------------")
 
 	//getting the inputs
-	fmt.Print("Please enter your weight (kg) :")
+	var weight float32
+	var height float32
+
+	fmt.Print("Please enter your weight (kg) : ")
+	fmt.Scan(&weight)
+
 	fmt.Print("Please enter your height (m) :")
+	fmt.Scan(&height)
+
 }
