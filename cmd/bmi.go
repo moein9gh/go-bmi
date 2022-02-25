@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// get inputs and calculate BMI
+//main gets inputs
 func main() {
 
 	fmt.Println("BMI calculator")
@@ -18,4 +18,11 @@ func main() {
 	fmt.Print("Please enter your height (m) :")
 	fmt.Scan(&height)
 
+	fmt.Print("your BMI is :", bmiCalculator(height, weight))
+
+}
+
+//bmiCalculator gets inputs and calculate the BMI
+func bmiCalculator(height, weight float32) float32 {
+	return weight / (height * height)
 }
